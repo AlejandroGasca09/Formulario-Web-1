@@ -1,10 +1,16 @@
-liga.addEventListener('DOMContentLoaded', function() {
-    var elems = liga.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, options);
+document.addEventListener('DOMContentLoaded', function() {
+    const elementoscarrusel = document.querySelectorAll('.carousel');
+    M.Carousel.init(elementoscarrusel,{
+      duration:150,
+      dist:0,
+      shift:5,
+      padding:5,
+      numVisible:5
+    });
   });
 
   // Or with jQuery
 
-  $(liga).ready(function(){
+  $(document).ready(function(){
     $('.carousel').carousel();
   });

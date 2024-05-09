@@ -10,12 +10,50 @@ nav{
 }
 .textoliga{
     padding: 20px;
+    font-size: large;
 
 }
 .page-footer{
-    background-color: cornflowerblue;
+    background-color:antiquewhite;
 }
 .cuatrograndes{
     padding: auto;
     border-radius: 100px;
+}
+.carrusel .carrusel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 500px;
+    height: 500px;
+}
+.carrusel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+.tituloid{
+    text-align: center;
+}
+.parraid{
+    padding: 50px;
+
+}
+button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 20px;
+    background-color: #008CBA; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
 }
