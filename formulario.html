@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario Fan Id</title>
 </head>
 <body>
-    <h1>Hola Herminia</h1>
+    <header>
+        <h1>Formulario Web</h1>
+    </header>
+    <div class="Form">
+        <form action="enviarRegistro.php" method="post">
+            <div>
+                <label for="nombre_usuario">Ingresa tu nombre:</label>
+                <input type="text" name="nombre_usuario" required maxlength="100" placeholder="Ingresa tu nombre">
+                <br><br>
+            </div>
+            <div>
+                <label for="equipo">Elige a tu equipo</label>
+                <input type="text" name="equipo" required list="lista-equipos" placeholder="Elige a tu equipo">
+                <datalist id="lista-equipos">
+                    <option value="Atlas">Atlas F.C</option>
+                    <option value="America">C.F America</option>
+                    <option value="Monterrey">C.F Monterrey</option>
+                    <option value="Pachuca">C.F Pachuca</option>
+                    <option value="Leon">Club Leon</option>
+                    <option value="Santos">Cub Santos laguna</option>
+                    <option value="Tijuana">Club Tijuana de Caliente</option>
+                    <option value="Cruz azul">Cruz Azul</option>
+                    <option value="Toluca">Deportivo Toluca F.C</option>
+                    <option value="Juarez">F.C Juarez</option>
+                    <option value="Chivas">Guadalajara Chivas</option>
+                    <option value="Mazatlan">Mazatlan F.C</option>
+                    <option value="Necaxa">Necaxa</option>
+                    <option value="Puebla">Puebla F.C</option>
+                    <option value="Pumas">Pumas UNAM</option>
+                    <option value="Queretaro">Queretaro F.C</option>
+                    <option value="San luis">San Luis</option>
+                    <option value="Tigres">Tigres UANL</option>
+                </datalist>
+                <br><br>
+            </div>
+        </form>
+
+    </div>
 </body>
 </html>
