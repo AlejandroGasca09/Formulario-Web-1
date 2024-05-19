@@ -14,7 +14,7 @@ nav{
 
 }
 .page-footer{
-    background-color:antiquewhite;
+    background-color:rgb(234, 149, 37);
 }
 .cuatrograndes{
     padding: auto;
@@ -51,9 +51,18 @@ button{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px 20px;
-    background-color: #008CBA; /* Color del botón */
+    background-color: #d7721a; /* Color del botón */
     color: white; /* Color del texto */
     border: none;
     cursor: pointer;
     text-decoration: none;
+}
+table .patrocinadores {
+    width: 30px;
+}
+.imgred{
+    width: 5px;
+}
+.botonre{
+    align-content: center;
 }

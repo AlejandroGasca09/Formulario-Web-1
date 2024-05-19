@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <title>Formulario Fan Id</title>
 </head>
-<body>
+<body class="container">
     <header>
-        <h1>Formulario Web</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td><h1>Formulario Fan ID</h1></td>
+                    <td><img src="https://th.bing.com/th/id/R.aa93add33b0e8fc36c167697f9e7d112?rik=NGoENJFRuNAuXA&pid=ImgRaw&r=0" alt="logoliga" width="500px"></td>
+                </tr>
+            </tbody>
+        </table>
+    <br>
     </header>
     <div class="Form">
         <form action="enviarRegistro.php" method="post">
@@ -40,9 +51,37 @@
                     <option value="Tigres">Tigres UANL</option>
                 </datalist>
                 <br><br>
+            <div>
+                <label for="direccion">Direccion:</label>
+                <input type="text" name="direccion" required maxlength="255" placeholder="Ingresa tu direccion">
+                <br><br>
+            </div>
+            <div>
+                <label for="telefono">Numero de contacto:</label>
+                <input type="number" name="numero" required maxlength="10" placeholder="Ingresa un numero de telefono">
+                <br><br>
+            </div>
+            <div>
+                <label for="correo">Email:</label>
+                <input type="email" name="correo" required maxlength="100" placeholder="Ingresa tu correo">
+                <br><br>
+            </div>
+            <div>
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" required maxlength="30" placeholder="Ingresa tu contraseña">
+                <br><br>
+            </div>
+            <div>
+                <label for="fecha_registro">Fecha de Registro:</label>
+                <input type="date" name="fecha_registro" required maxlength="8" placeholder="Ingresa la fecha ">
+                <br><br>
+            </div>
+            <div>
+                <button class="btn" type="submit" name="action" >Enviar Registro
+                    <i class="material-icons right">send</i>
+                </button>
             </div>
         </form>
-
     </div>
 </body>
 </html>
