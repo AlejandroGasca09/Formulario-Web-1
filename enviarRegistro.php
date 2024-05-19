@@ -1,8 +1,8 @@
 <?php
-include "conexion.php";
+include "./conexion.php";
 mysqli_set_charset($conexion,'utf8');
 
-$buscarusuario = "SELECT * FROM persona WHERE no_cuenta ='$_POST[no_cuenta]' ";
+$buscarusuario = "SELECT * FROM persona WHERE nombre_usuario ='$_POST[nombre_usuario]' ";
 
 $resulatdo = $conexion-> query($buscarusuario);
 $count=mysqli_num_rows($resulatdo)
@@ -11,9 +11,15 @@ if($count == 1){
     echo"<a href='index.html'>Nuevo Registro</a>";
 }else{
     mysqli_query($conexion,"INSERT INTO persona (
-        nombre_usuario)
+        nombre_usuario,equipo_usuario,direccion_usuario,numero_usuario,correo_usuario,contraseña_usuario,fecha_registro)
         VALUES(
-            '$POST[nombre_usuario]'
+            '$POST[nombre_usuario]',
+            '$POST[equipo_usuario]',
+            '$POST[direccion_usuario]',
+            '$POST[numero_usuario]',
+            '$POST[correo_usuario]',
+            '$POST[contraseña_usuario]',
+            '$POST[fecha_registro]'
     )");
 }
 ?>
