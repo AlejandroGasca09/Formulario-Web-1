@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+
     <title>Formulario Fan Id</title>
 </head>
 <body class="container">
@@ -21,7 +25,7 @@
     <br>
     </header>
     <div class="Form">
-        <form action="enviarRegistro.php" method="post">
+        <form action="./enviarRegistro.php" method="post">
             <div>
                 <label for="nombre_usuario">Ingresa tu nombre:</label>
                 <input type="text" name="nombre_usuario" required maxlength="100" placeholder="Ingresa tu nombre">
@@ -76,12 +80,13 @@
                 <input type="date" name="fecha_registro" required maxlength="8" placeholder="Ingresa la fecha ">
                 <br><br>
             </div>
-            <div>
-                <button class="btn" type="submit" name="action" >Enviar Registro
-                    <i class="material-icons right">send</i>
-                </button>
-            </div>
+            <br>
+            <button class="seiya" type="submit" name="action" >Enviar Registro
+                <i class="material-icons right" >send</i>
+                <br>
+            </button>
         </form>
     </div>
 </body>
 </html>
+<a href="./index.php">Nuevo Registro</a>
